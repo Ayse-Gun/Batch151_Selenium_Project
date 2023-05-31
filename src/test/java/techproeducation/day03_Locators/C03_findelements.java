@@ -51,11 +51,17 @@ public class C03_findelements {
         linklerListesi.forEach(link -> {if (!link.getText().isEmpty())
         {System.out.println(link.getText());}});   // Fake sayfaya gitti ve 31 tane buldu
         // Shop deals in Electronics webelementinin yazisini yazdiralim
-        System.out.println("**********************************");
-        System.out.println();
+        //Shop deals in Electronics webElementinin yazısını yazdıralım
+        System.out.println("**********************************************************");
+        System.out.println(driver.findElement(By.id("nav-link-accountList-nav-line-1")).getText());
+        WebElement webElementYazisi = driver.findElement(By.id("nav-link-accountList-nav-line-1"));
+        System.out.println(webElementYazisi.getText());
+        //webelementin üzerindeki yazıyı almak istiyorsak getText() methodunu kullanırız
+
+
         driver.close();
 
-         // *********    HOMEWORK    **********
+        // *********    HOMEWORK    **********
 
         //Amazon sayfasına gidiniz
 //iphone aratınız
