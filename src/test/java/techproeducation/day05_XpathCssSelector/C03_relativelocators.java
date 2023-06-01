@@ -42,7 +42,8 @@ public class C03_relativelocators {
         WebElement completeBike = driver.findElement(with(By.tagName("a")).below(electricBike));
         completeBike.click();
 
-        driver.close();
+       driver.close();
+
 
     }
 }
